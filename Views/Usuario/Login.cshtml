@@ -1,0 +1,31 @@
+﻿@model ProjetoFinalLivia.Models.Usuario
+@{
+    Layout = null;
+}
+<link rel="stylesheet" href="~/css/Login.css">
+<div class="menu">
+
+</div>
+<div class= "test-center">
+    <form class="box" asp-action="Login">
+        <div class="box2">
+            <h2>LOGIN</h2>
+            <div class="caixa">
+                <label asp-for="UsuarioEmail"></label>
+                <input asp-for="UsuarioEmail"/>
+                <span asp-validation-for="UsuarioEmail"></span>
+            </div>
+            <div class="caixa">
+                <label asp-for="UsuarioSenha"></label>
+                <input asp-for="UsuarioSenha" type="password" />
+                <span asp-validation-for="UsuarioSenha"></span>
+            </div>
+            <br />
+            <h4>@ViewBag.Mensagem</h4>
+            <br />
+            <div>
+                <input class=" btn" type="submit" value="Entrar"/>
+            </div>
+        </div>
+    </form>
+</div>

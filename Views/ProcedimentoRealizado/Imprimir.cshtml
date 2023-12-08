@@ -1,0 +1,36 @@
+﻿@model ProjetoFinalLivia.Models.ProcedimentoRealizado
+@{
+    Layout = null;
+}
+
+<link href="~/css/imprimir.css" rel="stylesheet" />
+<div class="main" style="background-color:#E6FCFC">
+    
+    <div class="menu-principal" style="background-color:#9DDDEB;">
+        <div class="logo">
+            <a><img src="~/img/logo2.png" /></a>
+        </div>
+        <span>CLÍNICA RENEWLIFE</span>
+    </div>
+    <div class= "menu-inf">
+        <div class="item">
+            <h3>Cliente:@Html.DisplayFor(model => model.Cliente.ClienteNome)</h3>     
+            <h3>Sexo: @Html.DisplayFor(model => model.Cliente.ClienteSexo)</h3>
+        </div>       
+        <div class="item">
+            <h3>Telefone: @Html.DisplayFor(model => model.Cliente.ClienteTelefone)</h3> 
+            <h3 class="clinica">@Html.DisplayFor(model => model.LocalRealizacao.LocalNome)</h3>
+        </div>        
+    </div>
+    <div class="menu-data">
+        <h3>@Html.DisplayNameFor(model => model.DataRealizacao)</h3> <p>@Html.DisplayFor(model => model.DataRealizacao)</p>
+        <h3>@Html.DisplayNameFor(model => model.Colaborador):</h3> <p>@Html.DisplayFor(model => model.Colaborador.ColaboradorNome)</p>
+    </div>
+    <div class="procedimento">
+        <h1>@Html.DisplayFor(model => model.Procedimento.ProcedimentoNome)</h1>
+    </div>
+    <hr>
+    <div class="resultado">
+        <h2>@Html.DisplayNameFor(model => model.ObservacaoRealizacao):</h2><p>@Html.DisplayFor(model => model.ObservacaoRealizacao)</p>
+    </div>
+</div>

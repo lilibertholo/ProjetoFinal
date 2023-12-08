@@ -1,0 +1,39 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+html {
+    font-size: 16px;
+}
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #D7FCFC;
+}
+
+.menu {
+    background-color: #9DDDEB !important;
+    border-bottom: 2px solid #0B008F !important;
+}
+
+.footer {
+    background-color: #9DDDEB !important;
+    border-top: 2px solid #0B008F !important;
+}
+.logo {
+    width: 87px;
+}
+
+.logo img {
+    width: 100%;
+}
+.navbar-nav {
+    margin-left: 40px;
+}

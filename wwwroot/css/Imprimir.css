@@ -1,0 +1,95 @@
+﻿html, head, body, header, div, p,
+nav, ul, li, main, img, svg, figure {
+    border: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Lucida Console', 'Courier New',monospace;
+}
+
+.menu-principal span {
+    line-height: 60px;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.main {
+    height: 650px;
+    width: 95%;
+    margin: 50px auto;
+    background-color: #E6FCFC;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.menu-principal h1 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.menu-principal {
+    background-color: #9DDDEB;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu-inf {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-data {
+    float: right;
+    margin:23px;
+}
+
+.procedimento {
+    margin-top: 180px;
+    margin-left: 30px;
+}
+
+.procedimento h1 {
+    text-decoration: underline 1.5px rgb(239, 40, 40);
+}
+
+.resultado {
+    margin-top: 15px;
+    margin-left: 30px;
+    width: 100%;
+}
+
+.resultado span {
+    display: block;
+    padding-bottom: 5px;
+}
+
+.metodo {
+    margin-top: 15px;
+    margin-left: 30px;
+    width: 100%;
+}
+
+.numero {
+    color: red;
+}
+
+.item {
+    margin: 0 auto;
+    padding-right: 10px;
+}
+.clinica {
+    color: red;
+}
+.logo {
+    width: 87px;
+}
+
+    .logo img {
+        width: 100%;
+    }
